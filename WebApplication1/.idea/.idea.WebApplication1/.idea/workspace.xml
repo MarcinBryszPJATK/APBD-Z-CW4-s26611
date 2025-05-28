@@ -8,17 +8,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e8ff2ad-7a62-427f-ab13-5b83d867755e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Data/AppDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Models/Doctor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Models/Medicament.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Models/Patient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Models/Prescription.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Models/PrescriptionMedicament.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Controllers/PatientController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Controllers/PrescriptionController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/DTOs/DoctorDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/DTOs/MedicamentDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/DTOs/PatientDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/DTOs/PrescriptionCreateDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/DTOs/PrescriptionDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/DTOs/PrescriptionMedicamentDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Sevices/DvService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Data/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Data/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -34,6 +45,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Launch Settings Profile.WebApplication1: http.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -72,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1748457723098</updated>
       <workItem from="1748457724784" duration="64000" />
-      <workItem from="1748457833263" duration="3448000" />
+      <workItem from="1748457833263" duration="8255000" />
     </task>
     <servers />
   </component>

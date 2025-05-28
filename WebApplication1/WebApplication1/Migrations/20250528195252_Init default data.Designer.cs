@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebApplication1.Data;
 
@@ -11,9 +12,11 @@ using WebApplication1.Data;
 namespace WebApplication1.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250528195252_Init default data")]
+    partial class Initdefaultdata
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -87,7 +90,7 @@ namespace WebApplication1.Migrations
                         new
                         {
                             IdMedicament = 1,
-                            Description = "Lek 1 opis",
+                            Description = "Lek 1 tralalala",
                             Name = "Lek 1",
                             Type = "Bol"
                         });
@@ -155,16 +158,6 @@ namespace WebApplication1.Migrations
                     b.HasIndex("IdPatient");
 
                     b.ToTable("Perscription");
-
-                    b.HasData(
-                        new
-                        {
-                            IdPersciption = 1,
-                            Date = new DateTime(2025, 5, 28, 14, 30, 0, 0, DateTimeKind.Unspecified),
-                            DueDate = new DateTime(2025, 6, 28, 14, 30, 0, 0, DateTimeKind.Unspecified),
-                            IdDoctor = 1,
-                            IdPatient = 1
-                        });
                 });
 
             modelBuilder.Entity("WebApplication1.Models.PrescriptionMedicament", b =>
@@ -188,15 +181,6 @@ namespace WebApplication1.Migrations
                     b.HasIndex("IdPrescription");
 
                     b.ToTable("Prescription_Medicament");
-
-                    b.HasData(
-                        new
-                        {
-                            IdMedicament = 1,
-                            IdPrescription = 1,
-                            Details = "Details ",
-                            Dose = 5
-                        });
                 });
 
             modelBuilder.Entity("WebApplication1.Models.Prescription", b =>
